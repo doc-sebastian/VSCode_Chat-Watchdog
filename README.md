@@ -82,14 +82,14 @@ start_watchdog.bat --send reply     :: manuell "continue" senden (Test)
 | `session_active_window_hours` | `12` | Sessions jünger als X Stunden gelten als aktiv |
 | `inter_send_delay_sec` | `2.0` | Pause zwischen Sendungen an verschiedene Fenster |
 | `dark_mode` | `true` | GUI in Dunkel (`true`) oder Hell (`false`) |
-| `accent_color` | `#0078D7` | Akzentfarbe der GUI (PedPACS-Blau) |
+| `accent_color` | `#0078D7` | Akzentfarbe der GUI (Blau) |
 | `gui_geometry` | `""` | gemerkte Fensterposition/-größe |
 
 Alle Werte sind auch direkt in der GUI änderbar („Speichern & Anwenden").
 
 ## GUI
 
-* PedPACS-Look: dunkles/helles Theme (Umschalter ☀️/🌙 oben rechts, wird gespeichert),
+* Look: dunkles/helles Theme (Umschalter ☀️/🌙 oben rechts, wird gespeichert),
   Akzentfarbe `#0078D7`, Segoe-UI-Schrift, abgerundete Emoji-Icons (PIL).
 * Status-Karte mit farbigem Puls-Indikator (läuft = blau pulsierend,
   Fehler = rot, Stillstand = gelb, fertig = grün), Chips für Countdown,
@@ -97,15 +97,14 @@ Alle Werte sind auch direkt in der GUI änderbar („Speichern & Anwenden").
 * Emoji-Buttons: 💾 Speichern & Anwenden, 🔄 Jetzt prüfen, 📊 Status anzeigen,
   🔁 Test: try again, ⏩ Test: continue, ⏸/▶ Pause/Start.
 * Farblich hinterlegtes Protokoll (Warnungen gelb, Fehler rot, Sendungen blau).
-* Programm-Icon: 🤖 auf PedPACS-Blau, wird beim Start als `watchdog_icon.ico`
+* Programm-Icon: 🤖 auf Blau, wird beim Start als `vscode_watchdog.ico`
   generiert und für das Fenster gesetzt (funktioniert auch als Taskleisten-Icon).
 
 ## Dateien
 
-* `vscode_chat_watchdog.py` – das Programm
-* `config.json` – Konfiguration
-* `watchdog.log` – Protokoll (rotiert bei 2 MB)
-* `keybindings.json.watchdog.bak` – Backup der VS-Code-Keybindings (im VS-Code-User-Verzeichnis)
+* `vscode_watchdog.py` – das Programm
+* `vscode_watchdog.config.json` – Konfiguration
+* `vscode_watchdog.log` – Protokoll (rotiert bei 2 MB)
 
 ## Voraussetzungen
 
@@ -114,3 +113,8 @@ Alle Werte sind auch direkt in der GUI änderbar („Speichern & Anwenden").
   privaten/inkognito-ähnlichen Zustand sein. Der Chat-View muss existieren
   (muss nicht sichtbar im Vordergrund sein – das Fenster wird automatisch
   geholt).
+
+ 
+ 
+Author
+Sebastian Fischer post@scriptometer.de;
